@@ -40,13 +40,13 @@
             lblPacientesEnCola = new Label();
             lblDoctorTurno = new Label();
             pnlContenido = new Panel();
+            btnActualizarCola = new Button();
             lvColaPacientes = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             label1 = new Label();
-            btnActualizarCola = new Button();
             pnlMenu.SuspendLayout();
             pnlTopInfo.SuspendLayout();
             pnlContenido.SuspendLayout();
@@ -78,6 +78,7 @@
             btnSalir.TabIndex = 1;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnDeshacer
             // 
@@ -88,6 +89,7 @@
             btnDeshacer.TabIndex = 1;
             btnDeshacer.Text = "Deshacer Acción";
             btnDeshacer.UseVisualStyleBackColor = true;
+            btnDeshacer.Click += btnDeshacer_Click;
             // 
             // btnRotacion
             // 
@@ -98,6 +100,7 @@
             btnRotacion.TabIndex = 1;
             btnRotacion.Text = "Rotación Médicos";
             btnRotacion.UseVisualStyleBackColor = true;
+            btnRotacion.Click += btnRotacion_Click;
             // 
             // btnHistorial
             // 
@@ -108,6 +111,7 @@
             btnHistorial.TabIndex = 1;
             btnHistorial.Text = "Historial";
             btnHistorial.UseVisualStyleBackColor = true;
+            btnHistorial.Click += btnHistorial_Click;
             // 
             // btnAtenderPaciente
             // 
@@ -118,6 +122,7 @@
             btnAtenderPaciente.TabIndex = 1;
             btnAtenderPaciente.Text = "Atender Paciente";
             btnAtenderPaciente.UseVisualStyleBackColor = true;
+            btnAtenderPaciente.Click += btnAtenderPaciente_Click;
             // 
             // btnRegistrarPaciente
             // 
@@ -128,6 +133,7 @@
             btnRegistrarPaciente.TabIndex = 1;
             btnRegistrarPaciente.Text = "Registrar Paciente";
             btnRegistrarPaciente.UseVisualStyleBackColor = true;
+            btnRegistrarPaciente.Click += btnRegistrarPaciente_Click;
             // 
             // pnlTopInfo
             // 
@@ -181,6 +187,15 @@
             pnlContenido.Size = new Size(684, 481);
             pnlContenido.TabIndex = 2;
             // 
+            // btnActualizarCola
+            // 
+            btnActualizarCola.Location = new Point(15, 443);
+            btnActualizarCola.Name = "btnActualizarCola";
+            btnActualizarCola.Size = new Size(143, 26);
+            btnActualizarCola.TabIndex = 2;
+            btnActualizarCola.Text = "Actualizar Cola";
+            btnActualizarCola.UseVisualStyleBackColor = true;
+            // 
             // lvColaPacientes
             // 
             lvColaPacientes.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4 });
@@ -220,15 +235,6 @@
             label1.Size = new Size(157, 15);
             label1.TabIndex = 0;
             label1.Text = "Listado de Pacientes en Cola";
-            // 
-            // btnActualizarCola
-            // 
-            btnActualizarCola.Location = new Point(15, 443);
-            btnActualizarCola.Name = "btnActualizarCola";
-            btnActualizarCola.Size = new Size(143, 26);
-            btnActualizarCola.TabIndex = 2;
-            btnActualizarCola.Text = "Actualizar Cola";
-            btnActualizarCola.UseVisualStyleBackColor = true;
             // 
             // frmDashboard
             // 

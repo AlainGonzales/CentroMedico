@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CentroMedico
 {
-    public partial class FrmRotacionMedico : Form
+    public partial class frmRotacionMedico : Form
     {
-        public FrmRotacionMedico()
+        public frmRotacionMedico()
         {
             InitializeComponent();
         }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CentroMedico
 {
-    public partial class FrmDeshacerAccion : Form
+    public partial class frmDeshacerAccion : Form
     {
-        public FrmDeshacerAccion()
+        public frmDeshacerAccion()
         {
             InitializeComponent();
         }
