@@ -80,5 +80,26 @@
             AtencionMedica anterior = historial.Anterior();
             MostrarAtencion(anterior);
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string dni = txtBuscarDNI.Text.Trim();
+            if (string.IsNullOrEmpty(dni))
+            {
+                MessageBox.Show("Ingrese un DNI para buscar.");
+                return;
+            }
+
+            AtencionMedica resultado = historial.BuscarPorDNI(dni);
+
+            if (resultado != null)
+            {
+                MostrarAtencion(resultado);
+            }
+            else
+            {
+                MessageBox.Show("Paciente no encontrado en el historial.");
+            }
+        }
     }
 }

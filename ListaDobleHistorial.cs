@@ -89,6 +89,22 @@
         {
             _actual = _primero;
         }
+
+        public AtencionMedica BuscarPorDNI(string dni)
+        {
+            NodoHistorial temp = _primero;
+            while (temp != null)
+            {
+                if (temp.Valor.PacienteAtendido.DNI == dni)
+                {
+                    _actual = temp; // ¡Muy importante!
+                    return temp.Valor;
+                }
+                temp = temp.Siguiente;
+            }
+
+            return null;
+        }
     }
 
 }

@@ -62,6 +62,7 @@
             btnBuscar.TabIndex = 1;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtSintomas
             // 
@@ -178,6 +179,7 @@
             lblPosicion.Name = "lblPosicion";
             lblPosicion.Size = new Size(524, 32);
             lblPosicion.TabIndex = 29;
+            lblPosicion.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtDiagnostico
             // 

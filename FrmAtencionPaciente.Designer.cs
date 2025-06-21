@@ -143,6 +143,7 @@
             lblMedicoInfo.Name = "lblMedicoInfo";
             lblMedicoInfo.Size = new Size(524, 45);
             lblMedicoInfo.TabIndex = 21;
+            lblMedicoInfo.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // frmAtencionPaciente
             // 
