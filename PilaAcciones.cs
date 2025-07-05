@@ -11,19 +11,18 @@
 
         public void Apilar(AccionRealizada accion)
         {
-            NodoAccion nuevo = new NodoAccion(accion);
-            nuevo.Siguiente = cima;
+            NodoAccion nuevo = new NodoAccion(accion, cima);
+            //nuevo.Siguiente = cima;
             cima = nuevo;
         }
 
         public AccionRealizada Desapilar()
         {
-            if (cima == null)
-                return null;
+            if (EstaVacia()) return null;
 
-            AccionRealizada temp = cima.Valor;
+            AccionRealizada accion = cima.Valor;
             cima = cima.Siguiente;
-            return temp;
+            return accion;
         }
 
         public AccionRealizada Tope()

@@ -35,6 +35,7 @@
             // 
             // txtUltimaAccion
             // 
+            txtUltimaAccion.Enabled = false;
             txtUltimaAccion.Location = new Point(118, 9);
             txtUltimaAccion.Name = "txtUltimaAccion";
             txtUltimaAccion.Size = new Size(294, 23);
@@ -57,6 +58,7 @@
             btnDeshacer.TabIndex = 17;
             btnDeshacer.Text = "DesHacer";
             btnDeshacer.UseVisualStyleBackColor = true;
+            btnDeshacer.Click += btnDeshacer_Click;
             // 
             // frmDeshacerAccion
             // 
@@ -68,6 +70,7 @@
             Controls.Add(label2);
             Name = "frmDeshacerAccion";
             Text = "Deshacer Acción (Pila)";
+            Load += frmDeshacerAccion_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }

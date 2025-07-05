@@ -5,10 +5,10 @@
         public AccionRealizada Valor { get; set; }
         public NodoAccion Siguiente { get; set; }
 
-        public NodoAccion(AccionRealizada accion)
+        public NodoAccion(AccionRealizada valor, NodoAccion siguiente = null)
         {
-            Valor = accion;
-            Siguiente = null;
+            Valor = valor;
+            Siguiente = siguiente;
         }
     }
 

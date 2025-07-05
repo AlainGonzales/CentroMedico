@@ -2,51 +2,75 @@
 {
     public class ListaCircularMedicos
     {
-        private NodoMedico actual;
+        private NodoMedico _actual;
 
         public ListaCircularMedicos()
         {
-            actual = null;
+            _actual = null;
         }
 
         public void Agregar(Medico medico)
         {
             NodoMedico nuevo = new NodoMedico(medico);
 
-            if (actual == null)
+            if (_actual == null)
             {
+                nuevo.Anterior = nuevo;
                 nuevo.Siguiente = nuevo;
-                actual = nuevo;
+                _actual = nuevo;
             }
             else
             {
-                NodoMedico temp = actual;
-                while (temp.Siguiente != actual)
-                {
-                    temp = temp.Siguiente;
-                }
+                NodoMedico ultimo = _actual.Anterior;
 
-                temp.Siguiente = nuevo;
-                nuevo.Siguiente = actual;
+                nuevo.Siguiente = _actual;
+                nuevo.Anterior = ultimo;
+
+                ultimo.Siguiente = nuevo;
+                _actual.Anterior = nuevo;
             }
         }
 
         public Medico ObtenerActual()
         {
-            return actual?.Valor;
+            return _actual?.Valor;
+        }
+
+        public void Retroceder()
+        {
+            if (_actual != null)
+            {
+                _actual = _actual.Anterior;
+            }
         }
 
         public void Avanzar()
         {
-            if (actual != null)
+            if (_actual != null)
             {
-                actual = actual.Siguiente;
+                _actual = _actual.Siguiente;
             }
-        }
+        }        
 
         public bool EstaVacia()
         {
-            return actual == null;
+            return _actual == null;
+        }
+
+        public List<Medico> ObtenerTodos()
+        {
+            List<Medico> lista = new List<Medico>();
+
+            if (_actual == null) return lista;
+
+            NodoMedico temp = _actual;
+            do
+            {
+                lista.Add(temp.Valor);
+                temp = temp.Siguiente;
+            } while (temp != _actual);
+
+            return lista;
         }
     }
 

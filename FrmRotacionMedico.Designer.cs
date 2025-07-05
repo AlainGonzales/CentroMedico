@@ -30,16 +30,19 @@
         {
             txtNombreMedico = new TextBox();
             label2 = new Label();
-            button1 = new Button();
+            btnSiguienteMedico = new Button();
             label1 = new Label();
-            listView1 = new ListView();
+            lvMedicos = new ListView();
             columnHeader1 = new ColumnHeader();
-            txtNuevoMedico = new TextBox();
-            btnNuevoMedico = new Button();
+            columnHeader2 = new ColumnHeader();
+            txtDNIMedico = new TextBox();
+            label3 = new Label();
+            btnAnteriorMedico = new Button();
             SuspendLayout();
             // 
             // txtNombreMedico
             // 
+            txtNombreMedico.Enabled = false;
             txtNombreMedico.Location = new Point(72, 9);
             txtNombreMedico.Name = "txtNombreMedico";
             txtNombreMedico.Size = new Size(313, 23);
@@ -54,69 +57,89 @@
             label2.Text = "Médico:";
             label2.TextAlign = ContentAlignment.MiddleRight;
             // 
-            // button1
+            // btnSiguienteMedico
             // 
-            button1.Location = new Point(12, 38);
-            button1.Name = "button1";
-            button1.Size = new Size(121, 23);
-            button1.TabIndex = 25;
-            button1.Text = "_siguiente Médico";
-            button1.UseVisualStyleBackColor = true;
+            btnSiguienteMedico.Location = new Point(240, 90);
+            btnSiguienteMedico.Name = "btnSiguienteMedico";
+            btnSiguienteMedico.Size = new Size(145, 23);
+            btnSiguienteMedico.TabIndex = 25;
+            btnSiguienteMedico.Text = "Siguiente Médico -->";
+            btnSiguienteMedico.UseVisualStyleBackColor = true;
+            btnSiguienteMedico.Click += btnRotar_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 84);
+            label1.Location = new Point(12, 181);
             label1.Name = "label1";
             label1.Size = new Size(95, 15);
             label1.TabIndex = 27;
             label1.Text = "Lista de Médicos";
             // 
-            // listView1
+            // lvMedicos
             // 
-            listView1.Columns.AddRange(new ColumnHeader[] { columnHeader1 });
-            listView1.Location = new Point(12, 102);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(256, 185);
-            listView1.TabIndex = 28;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.Details;
+            lvMedicos.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
+            lvMedicos.FullRowSelect = true;
+            lvMedicos.Location = new Point(12, 214);
+            lvMedicos.Name = "lvMedicos";
+            lvMedicos.Size = new Size(373, 185);
+            lvMedicos.TabIndex = 28;
+            lvMedicos.UseCompatibleStateImageBehavior = false;
+            lvMedicos.View = View.Details;
             // 
             // columnHeader1
             // 
-            columnHeader1.Text = "Nombre Completo";
-            columnHeader1.Width = 250;
+            columnHeader1.Text = "DNI";
+            columnHeader1.Width = 120;
             // 
-            // txtNuevoMedico
+            // columnHeader2
             // 
-            txtNuevoMedico.Location = new Point(12, 326);
-            txtNuevoMedico.Name = "txtNuevoMedico";
-            txtNuevoMedico.Size = new Size(256, 23);
-            txtNuevoMedico.TabIndex = 29;
+            columnHeader2.Text = "MEDICO";
+            columnHeader2.Width = 200;
             // 
-            // btnNuevoMedico
+            // txtDNIMedico
             // 
-            btnNuevoMedico.Location = new Point(274, 325);
-            btnNuevoMedico.Name = "btnNuevoMedico";
-            btnNuevoMedico.Size = new Size(111, 23);
-            btnNuevoMedico.TabIndex = 30;
-            btnNuevoMedico.Text = "Nuevo Médico";
-            btnNuevoMedico.UseVisualStyleBackColor = true;
+            txtDNIMedico.Enabled = false;
+            txtDNIMedico.Location = new Point(72, 38);
+            txtDNIMedico.Name = "txtDNIMedico";
+            txtDNIMedico.Size = new Size(313, 23);
+            txtDNIMedico.TabIndex = 32;
+            // 
+            // label3
+            // 
+            label3.Location = new Point(12, 38);
+            label3.Name = "label3";
+            label3.Size = new Size(54, 23);
+            label3.TabIndex = 31;
+            label3.Text = "DNI:";
+            label3.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // btnAnteriorMedico
+            // 
+            btnAnteriorMedico.Location = new Point(12, 90);
+            btnAnteriorMedico.Name = "btnAnteriorMedico";
+            btnAnteriorMedico.Size = new Size(153, 23);
+            btnAnteriorMedico.TabIndex = 33;
+            btnAnteriorMedico.Text = "<-- Anterior Médico";
+            btnAnteriorMedico.UseVisualStyleBackColor = true;
+            btnAnteriorMedico.Click += btnAnteriorMedico_Click;
             // 
             // frmRotacionMedico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(404, 361);
-            Controls.Add(btnNuevoMedico);
-            Controls.Add(txtNuevoMedico);
-            Controls.Add(listView1);
+            ClientSize = new Size(404, 439);
+            Controls.Add(btnAnteriorMedico);
+            Controls.Add(txtDNIMedico);
+            Controls.Add(label3);
+            Controls.Add(lvMedicos);
             Controls.Add(label1);
-            Controls.Add(button1);
+            Controls.Add(btnSiguienteMedico);
             Controls.Add(txtNombreMedico);
             Controls.Add(label2);
             Name = "frmRotacionMedico";
             Text = "Rotación Médico (Lista Circular)";
+            Load += frmRotacionMedico_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -125,11 +148,13 @@
 
         private TextBox txtNombreMedico;
         private Label label2;
-        private Button button1;
+        private Button btnAnteriorMedico;
         private Label label1;
-        private ListView listView1;
+        private ListView lvMedicos;
         private ColumnHeader columnHeader1;
-        private TextBox txtNuevoMedico;
-        private Button btnNuevoMedico;
+        private Button btnSiguienteMedico;
+        private TextBox txtDNIMedico;
+        private Label label3;
+        private ColumnHeader columnHeader2;
     }
 }

@@ -12,6 +12,8 @@ namespace CentroMedico
 
         private PilaAcciones pilaAcciones;
 
+        private bool datosPrecargados = false;
+
         public frmDashboard()
         {
             InitializeComponent();
@@ -28,9 +30,40 @@ namespace CentroMedico
             medicosEnTurno.Agregar(new Medico("22222222", "Dra. Lastimosa Curita"));
             medicosEnTurno.Agregar(new Medico("33333333", "Dr. Juanete Grande"));
 
+            // Precargar pacientes solo una vez
+            if (!datosPrecargados)
+            {
+                PrecargarPacientes();
+                datosPrecargados = true;
+            }
+
             // Actualiza UI inicial
             RefrescarDashboard();
         }
+
+        private void PrecargarPacientes()
+        {
+            Paciente p1 = new Paciente("12345678", "Ana Torres", "28", "Dolor de cabeza");
+            Paciente p2 = new Paciente("87654321", "Luis Chávez", "34", "Fiebre y escalofríos");
+            Paciente p3 = new Paciente("11223344", "María Paredes", "45", "Dolor abdominal");
+            Paciente p4 = new Paciente("44332211", "Carlos Vela", "60", "Presión alta");
+
+            // Lista simple
+            pacientesRegistrados.AgregarAlFinal(p1);
+            pacientesRegistrados.AgregarAlFinal(p2);
+            pacientesRegistrados.AgregarAlFinal(p3);
+            pacientesRegistrados.AgregarAlFinal(p4);
+
+            // Cola de atención
+            colaEspera.Encolar(p1);
+            colaEspera.Encolar(p2);
+            colaEspera.Encolar(p3);
+            colaEspera.Encolar(p4);
+
+            // Pila de acciones
+            pilaAcciones.Apilar(new AccionRealizada("Precarga", "Se registraron 4 pacientes por defecto"));
+        }
+
 
         private void RefrescarDashboard()
         {
@@ -78,13 +111,14 @@ namespace CentroMedico
 
         private void btnRotacion_Click(object sender, EventArgs e)
         {
-            frmRotacionMedico ventana = new frmRotacionMedico();
+            frmRotacionMedico ventana = new frmRotacionMedico(medicosEnTurno, pilaAcciones);
             ventana.ShowDialog();
+            RefrescarDashboard();
         }
 
         private void btnDeshacer_Click(object sender, EventArgs e)
         {
-            frmDeshacerAccion ventana = new frmDeshacerAccion();
+            frmDeshacerAccion ventana = new frmDeshacerAccion(pilaAcciones);
             ventana.ShowDialog();
         }
 

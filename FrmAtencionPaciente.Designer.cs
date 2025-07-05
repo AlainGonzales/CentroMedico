@@ -44,6 +44,7 @@
             // 
             // txtSintomas
             // 
+            txtSintomas.Enabled = false;
             txtSintomas.Location = new Point(118, 148);
             txtSintomas.Multiline = true;
             txtSintomas.Name = "txtSintomas";
@@ -52,6 +53,7 @@
             // 
             // txtEdad
             // 
+            txtEdad.Enabled = false;
             txtEdad.Location = new Point(118, 119);
             txtEdad.Name = "txtEdad";
             txtEdad.Size = new Size(117, 23);
@@ -59,6 +61,7 @@
             // 
             // txtNombre
             // 
+            txtNombre.Enabled = false;
             txtNombre.Location = new Point(118, 90);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(394, 23);
@@ -66,6 +69,7 @@
             // 
             // txtDNI
             // 
+            txtDNI.Enabled = false;
             txtDNI.Location = new Point(118, 61);
             txtDNI.Name = "txtDNI";
             txtDNI.Size = new Size(117, 23);
