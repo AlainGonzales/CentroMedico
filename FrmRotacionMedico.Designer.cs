@@ -82,7 +82,7 @@
             lvMedicos.FullRowSelect = true;
             lvMedicos.Location = new Point(12, 214);
             lvMedicos.Name = "lvMedicos";
-            lvMedicos.Size = new Size(373, 185);
+            lvMedicos.Size = new Size(373, 213);
             lvMedicos.TabIndex = 28;
             lvMedicos.UseCompatibleStateImageBehavior = false;
             lvMedicos.View = View.Details;

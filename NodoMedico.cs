@@ -1,4 +1,6 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Models;
+
+namespace CentroMedico
 {
     public class NodoMedico
     {

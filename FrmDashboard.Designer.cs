@@ -146,6 +146,7 @@
             pnlTopInfo.Name = "pnlTopInfo";
             pnlTopInfo.Size = new Size(684, 80);
             pnlTopInfo.TabIndex = 1;
+            pnlTopInfo.Paint += pnlTopInfo_Paint;
             // 
             // lblUltimaAccion
             // 

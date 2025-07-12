@@ -1,4 +1,6 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Models;
+
+namespace CentroMedico
 {
     public partial class frmAtencionPaciente : Form
     {
@@ -25,7 +27,7 @@
             this.historial = historial;
             this.pila = pila;
         }
-        
+
         private void btnAtender_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtDiagnostico.Text))
@@ -81,6 +83,11 @@
             txtSintomas.Text = pacienteActual.Sintomas;
 
             lblMedicoInfo.Text = $"Médico: {medicoActual.Nombre}";
+        }
+
+        private void lblMedicoInfo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
