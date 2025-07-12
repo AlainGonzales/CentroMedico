@@ -35,6 +35,7 @@
             lvMedicos = new ListView();
             columnHeader1 = new ColumnHeader();
             columnHeader2 = new ColumnHeader();
+            columnHeader3 = new ColumnHeader();
             txtDNIMedico = new TextBox();
             label3 = new Label();
             btnAnteriorMedico = new Button();
@@ -78,7 +79,7 @@
             // 
             // lvMedicos
             // 
-            lvMedicos.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2 });
+            lvMedicos.Columns.AddRange(new ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
             lvMedicos.FullRowSelect = true;
             lvMedicos.Location = new Point(12, 214);
             lvMedicos.Name = "lvMedicos";
@@ -90,12 +91,17 @@
             // columnHeader1
             // 
             columnHeader1.Text = "DNI";
-            columnHeader1.Width = 120;
+            columnHeader1.Width = 80;
             // 
             // columnHeader2
             // 
             columnHeader2.Text = "MEDICO";
-            columnHeader2.Width = 200;
+            columnHeader2.Width = 180;
+            // 
+            // columnHeader3
+            // 
+            columnHeader3.Text = "ESPECIALIDAD";
+            columnHeader3.Width = 150;
             // 
             // txtDNIMedico
             // 
@@ -156,5 +162,6 @@
         private TextBox txtDNIMedico;
         private Label label3;
         private ColumnHeader columnHeader2;
+        private ColumnHeader columnHeader3;
     }
 }

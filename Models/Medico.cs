@@ -29,7 +29,7 @@ namespace CentroMedico.Models
             return $"{Nombre} ({DNI})";
         }
 
-        private string ObtenerTextoEspecialidad(Especialidad especialidad)
+        public string ObtenerTextoEspecialidad(Especialidad especialidad)
         {
             return especialidad switch
             {
