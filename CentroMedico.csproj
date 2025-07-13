@@ -8,4 +8,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="C5" Version="3.0.0" />
+    <PackageReference Include="Microsoft.MSAGL.GraphViewerGDI" Version="1.1.7" />
+  </ItemGroup>
+
 </Project>

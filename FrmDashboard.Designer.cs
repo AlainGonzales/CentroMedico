@@ -47,6 +47,7 @@
             columnHeader3 = new ColumnHeader();
             columnHeader4 = new ColumnHeader();
             label1 = new Label();
+            button1 = new Button();
             pnlMenu.SuspendLayout();
             pnlTopInfo.SuspendLayout();
             pnlContenido.SuspendLayout();
@@ -55,6 +56,7 @@
             // pnlMenu
             // 
             pnlMenu.BackColor = Color.FromArgb(45, 45, 48);
+            pnlMenu.Controls.Add(button1);
             pnlMenu.Controls.Add(btnSalir);
             pnlMenu.Controls.Add(btnDeshacer);
             pnlMenu.Controls.Add(btnRotacion);
@@ -72,7 +74,7 @@
             btnSalir.BackColor = Color.Red;
             btnSalir.Font = new Font("Calibri", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.ForeColor = SystemColors.ButtonHighlight;
-            btnSalir.Location = new Point(12, 439);
+            btnSalir.Location = new Point(12, 499);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(171, 52);
             btnSalir.TabIndex = 1;
@@ -83,7 +85,7 @@
             // btnDeshacer
             // 
             btnDeshacer.Font = new Font("Calibri", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDeshacer.Location = new Point(12, 354);
+            btnDeshacer.Location = new Point(12, 412);
             btnDeshacer.Name = "btnDeshacer";
             btnDeshacer.Size = new Size(171, 60);
             btnDeshacer.TabIndex = 1;
@@ -94,7 +96,7 @@
             // btnRotacion
             // 
             btnRotacion.Font = new Font("Calibri", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRotacion.Location = new Point(12, 271);
+            btnRotacion.Location = new Point(12, 333);
             btnRotacion.Name = "btnRotacion";
             btnRotacion.Size = new Size(171, 59);
             btnRotacion.TabIndex = 1;
@@ -105,7 +107,7 @@
             // btnHistorial
             // 
             btnHistorial.Font = new Font("Calibri", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnHistorial.Location = new Point(12, 195);
+            btnHistorial.Location = new Point(12, 179);
             btnHistorial.Name = "btnHistorial";
             btnHistorial.Size = new Size(171, 57);
             btnHistorial.TabIndex = 1;
@@ -116,7 +118,7 @@
             // btnAtenderPaciente
             // 
             btnAtenderPaciente.Font = new Font("Calibri", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAtenderPaciente.Location = new Point(12, 100);
+            btnAtenderPaciente.Location = new Point(12, 95);
             btnAtenderPaciente.Name = "btnAtenderPaciente";
             btnAtenderPaciente.Size = new Size(171, 64);
             btnAtenderPaciente.TabIndex = 1;
@@ -237,6 +239,17 @@
             label1.TabIndex = 0;
             label1.Text = "Listado de Pacientes en Cola";
             // 
+            // button1
+            // 
+            button1.Font = new Font("Calibri", 11.25F, FontStyle.Bold);
+            button1.Location = new Point(12, 256);
+            button1.Name = "button1";
+            button1.Size = new Size(171, 57);
+            button1.TabIndex = 2;
+            button1.Text = "Derivaciones";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // frmDashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -276,5 +289,6 @@
         private ColumnHeader columnHeader4;
         private Label label1;
         private Button btnActualizarCola;
+        private Button button1;
     }
 }

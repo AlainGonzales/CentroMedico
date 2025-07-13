@@ -40,6 +40,8 @@
             txtDiagnostico = new TextBox();
             btnAtender = new Button();
             lblMedicoInfo = new Label();
+            label6 = new Label();
+            comboBoxEspecialidad = new ComboBox();
             SuspendLayout();
             // 
             // txtSintomas
@@ -131,7 +133,7 @@
             // 
             // btnAtender
             // 
-            btnAtender.Location = new Point(118, 352);
+            btnAtender.Location = new Point(118, 405);
             btnAtender.Name = "btnAtender";
             btnAtender.Size = new Size(394, 40);
             btnAtender.TabIndex = 19;
@@ -150,11 +152,31 @@
             lblMedicoInfo.TextAlign = ContentAlignment.MiddleCenter;
             lblMedicoInfo.Click += lblMedicoInfo_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(65, 358);
+            label6.Name = "label6";
+            label6.Size = new Size(47, 15);
+            label6.TabIndex = 22;
+            label6.Text = "Derivar:";
+            // 
+            // comboBoxEspecialidad
+            // 
+            comboBoxEspecialidad.FormattingEnabled = true;
+            comboBoxEspecialidad.Location = new Point(118, 358);
+            comboBoxEspecialidad.Name = "comboBoxEspecialidad";
+            comboBoxEspecialidad.Size = new Size(136, 23);
+            comboBoxEspecialidad.TabIndex = 25;
+            comboBoxEspecialidad.SelectedIndexChanged += comboBoxEspecialidad_SelectedIndexChanged;
+            // 
             // frmAtencionPaciente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(524, 450);
+            ClientSize = new Size(524, 476);
+            Controls.Add(comboBoxEspecialidad);
+            Controls.Add(label6);
             Controls.Add(lblMedicoInfo);
             Controls.Add(btnAtender);
             Controls.Add(txtDiagnostico);
@@ -188,5 +210,7 @@
         private TextBox txtDiagnostico;
         private Button btnAtender;
         private Label lblMedicoInfo;
+        private Label label6;
+        private ComboBox comboBoxEspecialidad;
     }
 }

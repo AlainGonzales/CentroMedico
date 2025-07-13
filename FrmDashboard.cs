@@ -1,5 +1,6 @@
 using CentroMedico.Models;
 using CentroMedico.Services;
+using CentroMedico.Utils;
 
 namespace CentroMedico
 {
@@ -19,6 +20,8 @@ namespace CentroMedico
 
         private MedicoService medicoService;
         private List<Medico> listaMedicos;
+
+        private GraphUtils graph;
 
         public frmDashboard()
         {
@@ -151,6 +154,11 @@ namespace CentroMedico
         private void pnlTopInfo_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GraphUtils.Instancia.MostrarGrafo();
         }
     }
 }
