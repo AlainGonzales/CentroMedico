@@ -1,4 +1,3 @@
-using CentroMedico.Models;
 using CentroMedico.Services;
 using CentroMedico.Utils;
 

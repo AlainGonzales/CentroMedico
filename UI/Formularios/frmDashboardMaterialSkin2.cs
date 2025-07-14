@@ -1,5 +1,6 @@
 ﻿using CentroMedico.Dominio;
 using CentroMedico.Infraestructura.Estructuras;
+using CentroMedico.Services;
 using MaterialSkin.Controls;
 
 namespace CentroMedico.UI.Formularios
@@ -12,6 +13,8 @@ namespace CentroMedico.UI.Formularios
         private ListaCircularMedicos medicosEnTurno;
         private PilaAcciones pilaAcciones;
         private bool datosPrecargados = false;
+        private MedicoService medicoService;
+        private List<Medico> listaMedicos;
 
         public frmDashboardMaterialSkin2()
         {
@@ -23,9 +26,12 @@ namespace CentroMedico.UI.Formularios
             medicosEnTurno = new ListaCircularMedicos();
             pilaAcciones = new PilaAcciones();
 
-            medicosEnTurno.Agregar(new Medico("11111111", "Dr. Gregory House"));
-            medicosEnTurno.Agregar(new Medico("22222222", "Dra. Lastimosa Curita"));
-            medicosEnTurno.Agregar(new Medico("33333333", "Dr. Juanete Grande"));
+            //medicosEnTurno.Agregar(new Medico("11111111", "Dr. Gregory House", ""));
+            //medicosEnTurno.Agregar(new Medico("22222222", "Dra. Lastimosa Curita",""));
+            //medicosEnTurno.Agregar(new Medico("33333333", "Dr. Juanete Grande",""));
+
+            PrecargarMedicos();
+            AgregarTurnosMedicos();
 
             if (!datosPrecargados)
             {
@@ -34,6 +40,20 @@ namespace CentroMedico.UI.Formularios
             }
 
             RefrescarDashboardMaterialSkin();
+        }
+
+        public void PrecargarMedicos()
+        {
+            medicoService = new MedicoService();
+            listaMedicos = medicoService.ObtenerMedicos();
+        }
+
+        public void AgregarTurnosMedicos()
+        {
+            foreach (Medico medico in listaMedicos)
+            {
+                medicosEnTurno.Agregar(medico);
+            }
         }
 
         private void PrecargarPacientes()

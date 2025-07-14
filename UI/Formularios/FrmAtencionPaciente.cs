@@ -1,5 +1,4 @@
-﻿using CentroMedico.Models;
-using CentroMedico.Utils;
+﻿using CentroMedico.Utils;
 
 using CentroMedico.Dominio;
 using CentroMedico.Infraestructura.Estructuras;

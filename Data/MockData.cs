@@ -1,4 +1,4 @@
-﻿using CentroMedico.Models;
+﻿using CentroMedico.Dominio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
