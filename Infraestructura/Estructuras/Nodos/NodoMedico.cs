@@ -1,4 +1,7 @@
-﻿using CentroMedico.Dominio;
+﻿using CentroMedico.Models;
+
+namespace CentroMedico
+using CentroMedico.Dominio;
 
 namespace CentroMedico.Infraestructura.Estructuras.Nodos
 {

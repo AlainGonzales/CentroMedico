@@ -9,11 +9,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="C5" Version="3.0.0" />
+    <PackageReference Include="Microsoft.MSAGL.GraphViewerGDI" Version="1.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Aplicacion\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MaterialSkin.2" Version="2.3.1" />
+    <PackageReference Include="QuickGraph" Version="3.6.61119.7" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,4 +1,6 @@
-﻿using CentroMedico.Dominio;
+﻿using CentroMedico.Models;
+using CentroMedico.Services;
+using CentroMedico.Dominio;
 using CentroMedico.Infraestructura.Estructuras;
 using System;
 using System.Collections.Generic;
@@ -17,6 +19,8 @@ namespace CentroMedico
         private ListaCircularMedicos medicos;
         private PilaAcciones pila;
 
+        private MedicoService medicoService;
+
         public frmRotacionMedico(ListaCircularMedicos medicos, PilaAcciones pila)
         {
             InitializeComponent();
@@ -32,7 +36,7 @@ namespace CentroMedico
 
             foreach (var medico in medicos.ObtenerTodos())
             {
-                var item = new ListViewItem(new[] { medico.DNI, medico.Nombre });
+                var item = new ListViewItem(new[] { medico.DNI, medico.Nombre,  medico.ObtenerTextoEspecialidad(medico.Especialidad) });
 
                 if (medico.DNI == medicoActual.DNI)
                 {

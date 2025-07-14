@@ -1,4 +1,7 @@
-﻿using CentroMedico.Dominio;
+﻿using CentroMedico.Models;
+using CentroMedico.Utils;
+
+using CentroMedico.Dominio;
 using CentroMedico.Infraestructura.Estructuras;
 
 namespace CentroMedico
@@ -13,9 +16,12 @@ namespace CentroMedico
         private Paciente pacienteActual;
         private Medico medicoActual;
 
+        private bool cargandoCombo = false;
+
         public frmAtencionPaciente()
         {
             InitializeComponent();
+            CargarEspecialidades();
         }
 
         public frmAtencionPaciente(ColaPacientes cola, ListaCircularMedicos medicos,
@@ -27,8 +33,9 @@ namespace CentroMedico
             this.medicos = medicos;
             this.historial = historial;
             this.pila = pila;
+            CargarEspecialidades();
         }
-        
+
         private void btnAtender_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtDiagnostico.Text))
@@ -48,6 +55,11 @@ namespace CentroMedico
 
             // Apilar acción
             pila.Apilar(new AccionRealizada("Atención", $"Se atendió a {pacienteActual.Nombre} con {medicoActual.Nombre}"));
+
+            GraphUtils.Instancia.AgregarArbol(Convert.ToInt32(medicoActual.DNI), medicoActual.Nombre);
+            GraphUtils.Instancia.AgregarArbol(Convert.ToInt32(comboBoxEspecialidad.SelectedIndex), comboBoxEspecialidad.Text);
+            GraphUtils.Instancia.AgregarNodoGrafo();
+            GraphUtils.Instancia.RelacionarGrafo(medicoActual.DNI, comboBoxEspecialidad.SelectedIndex.ToString());
 
             // Rota médico
             medicos.Avanzar();
@@ -84,6 +96,39 @@ namespace CentroMedico
             txtSintomas.Text = pacienteActual.Sintomas;
 
             lblMedicoInfo.Text = $"Médico: {medicoActual.Nombre}";
+        }
+
+        private void lblMedicoInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GraphUtils.Instancia.MostrarGrafo();
+        }
+
+        private void CargarEspecialidades()
+        {
+            cargandoCombo = true;
+            // Cargar los valores del enum en el ComboBox
+            comboBoxEspecialidad.DataSource = Enum.GetValues(typeof(Especialidad))
+                .Cast<Especialidad>()
+                .Select(e => new
+                {
+                    Valor = e,
+                    Texto = new Medico().ObtenerTextoEspecialidad(e)
+                })
+                .ToList();
+
+            comboBoxEspecialidad.DisplayMember = "Texto";
+            comboBoxEspecialidad.ValueMember = "Valor";
+            cargandoCombo = false;
+        }
+
+        private void comboBoxEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cargandoCombo) return;
         }
     }
 }

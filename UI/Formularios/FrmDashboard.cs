@@ -1,3 +1,7 @@
+using CentroMedico.Models;
+using CentroMedico.Services;
+using CentroMedico.Utils;
+
 using CentroMedico.Dominio;
 using CentroMedico.Infraestructura.Estructuras;
 
@@ -17,6 +21,11 @@ namespace CentroMedico
 
         private bool datosPrecargados = false;
 
+        private MedicoService medicoService;
+        private List<Medico> listaMedicos;
+
+        private GraphUtils graph;
+
         public frmDashboard()
         {
             InitializeComponent();
@@ -29,9 +38,10 @@ namespace CentroMedico
             pilaAcciones = new PilaAcciones();
 
             // Opcional: precarga tus médicos en la lista circular
-            medicosEnTurno.Agregar(new Medico("11111111", "Dr. Gregory House"));
-            medicosEnTurno.Agregar(new Medico("22222222", "Dra. Lastimosa Curita"));
-            medicosEnTurno.Agregar(new Medico("33333333", "Dr. Juanete Grande"));
+            //medicosEnTurno.Agregar(new Medico("11111111", "Dr. Gregory House"));
+            PrecargarMedicos();
+            AgregarTurnosMedicos();
+
 
             // Precargar pacientes solo una vez
             if (!datosPrecargados)
@@ -42,6 +52,20 @@ namespace CentroMedico
 
             // Actualiza UI inicial
             RefrescarDashboard();
+        }
+
+        public void PrecargarMedicos()
+        {
+            medicoService = new MedicoService();
+            listaMedicos = medicoService.ObtenerMedicos();
+        }
+
+        public void AgregarTurnosMedicos()
+        {
+            foreach (Medico medico in listaMedicos)
+            {
+                medicosEnTurno.Agregar(medico);
+            }
         }
 
         private void PrecargarPacientes()
@@ -128,6 +152,16 @@ namespace CentroMedico
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pnlTopInfo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GraphUtils.Instancia.MostrarGrafo();
         }
     }
 }
