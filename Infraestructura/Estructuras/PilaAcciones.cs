@@ -1,4 +1,7 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Dominio;
+using CentroMedico.Infraestructura.Estructuras.Nodos;
+
+namespace CentroMedico.Infraestructura.Estructuras
 {
     public class PilaAcciones
     {
@@ -34,6 +37,21 @@
         {
             return cima == null;
         }
+
+        public List<AccionRealizada> ObtenerTodas()
+        {
+            List<AccionRealizada> acciones = new List<AccionRealizada>();
+            NodoAccion actual = cima;
+
+            while (actual != null)
+            {
+                acciones.Add(actual.Valor);
+                actual = actual.Siguiente;
+            }
+
+            return acciones;
+        }
+
     }
 
 }

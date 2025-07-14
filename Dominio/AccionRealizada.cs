@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CentroMedico
+namespace CentroMedico.Dominio
 {
     public class AccionRealizada
     {

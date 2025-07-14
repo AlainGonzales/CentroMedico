@@ -1,4 +1,7 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Dominio;
+using CentroMedico.Infraestructura.Estructuras;
+
+namespace CentroMedico
 {
     public partial class frmAtencionPaciente : Form
     {

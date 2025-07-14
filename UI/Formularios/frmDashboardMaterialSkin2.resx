@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="columnHeader4.Text" xml:space="preserve">
+    <value>Acciones</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="columnHeader4.Width" type="System.Int32, mscorlib">
+    <value>396</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lvwUltimasAcciones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 69</value>
+  </data>
+  <data name="lvwUltimasAcciones.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="lvwUltimasAcciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 322</value>
+  </data>
+  <data name="lvwUltimasAcciones.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvwUltimasAcciones.Name" xml:space="preserve">
+    <value>lvwUltimasAcciones</value>
+  </data>
+  <data name="&gt;&gt;lvwUltimasAcciones.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialListView, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lvwUltimasAcciones.Parent" xml:space="preserve">
+    <value>cardUltimasAcciones</value>
+  </data>
+  <data name="&gt;&gt;lvwUltimasAcciones.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblUltimasAcciones.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 20px, style=Bold</value>
+  </data>
+  <data name="lblUltimasAcciones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 14</value>
+  </data>
+  <data name="lblUltimasAcciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 19</value>
+  </data>
+  <data name="lblUltimasAcciones.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblUltimasAcciones.Text" xml:space="preserve">
+    <value>Últimas Acciones</value>
+  </data>
+  <data name="&gt;&gt;lblUltimasAcciones.Name" xml:space="preserve">
+    <value>lblUltimasAcciones</value>
+  </data>
+  <data name="&gt;&gt;lblUltimasAcciones.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblUltimasAcciones.Parent" xml:space="preserve">
+    <value>cardUltimasAcciones</value>
+  </data>
+  <data name="&gt;&gt;lblUltimasAcciones.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cardUltimasAcciones.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 278</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cardUltimasAcciones.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardUltimasAcciones.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardUltimasAcciones.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 408</value>
+  </data>
+  <data name="cardUltimasAcciones.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;cardUltimasAcciones.Name" xml:space="preserve">
+    <value>cardUltimasAcciones</value>
+  </data>
+  <data name="&gt;&gt;cardUltimasAcciones.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cardUltimasAcciones.Parent" xml:space="preserve">
+    <value>tabDashboard</value>
+  </data>
+  <data name="&gt;&gt;cardUltimasAcciones.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Doctor</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>396</value>
+  </data>
+  <data name="lvwDoctoresDisponibles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 67</value>
+  </data>
+  <data name="lvwDoctoresDisponibles.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="lvwDoctoresDisponibles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 154</value>
+  </data>
+  <data name="lvwDoctoresDisponibles.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvwDoctoresDisponibles.Name" xml:space="preserve">
+    <value>lvwDoctoresDisponibles</value>
+  </data>
+  <data name="&gt;&gt;lvwDoctoresDisponibles.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialListView, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lvwDoctoresDisponibles.Parent" xml:space="preserve">
+    <value>cardDoctoresDisponibles</value>
+  </data>
+  <data name="&gt;&gt;lvwDoctoresDisponibles.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDoctoresEnTurno.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 20px, style=Bold</value>
+  </data>
+  <data name="lblDoctoresEnTurno.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 14</value>
+  </data>
+  <data name="lblDoctoresEnTurno.Size" type="System.Drawing.Size, System.Drawing">
+    <value>396, 24</value>
+  </data>
+  <data name="lblDoctoresEnTurno.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblDoctoresEnTurno.Text" xml:space="preserve">
+    <value>Doctor en Turno</value>
+  </data>
+  <data name="&gt;&gt;lblDoctoresEnTurno.Name" xml:space="preserve">
+    <value>lblDoctoresEnTurno</value>
+  </data>
+  <data name="&gt;&gt;lblDoctoresEnTurno.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblDoctoresEnTurno.Parent" xml:space="preserve">
+    <value>cardDoctoresDisponibles</value>
+  </data>
+  <data name="&gt;&gt;lblDoctoresEnTurno.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cardDoctoresDisponibles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>636, 23</value>
+  </data>
+  <data name="cardDoctoresDisponibles.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardDoctoresDisponibles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardDoctoresDisponibles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>430, 238</value>
+  </data>
+  <data name="cardDoctoresDisponibles.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cardDoctoresDisponibles.Name" xml:space="preserve">
+    <value>cardDoctoresDisponibles</value>
+  </data>
+  <data name="&gt;&gt;cardDoctoresDisponibles.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cardDoctoresDisponibles.Parent" xml:space="preserve">
+    <value>tabDashboard</value>
+  </data>
+  <data name="&gt;&gt;cardDoctoresDisponibles.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="columnHeader3.Text" xml:space="preserve">
+    <value>Pacientes</value>
+  </data>
+  <data name="columnHeader3.Width" type="System.Int32, mscorlib">
+    <value>390</value>
+  </data>
+  <data name="lvwColaAtencion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 69</value>
+  </data>
+  <data name="lvwColaAtencion.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="lvwColaAtencion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>390, 322</value>
+  </data>
+  <data name="lvwColaAtencion.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvwColaAtencion.Name" xml:space="preserve">
+    <value>lvwColaAtencion</value>
+  </data>
+  <data name="&gt;&gt;lvwColaAtencion.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialListView, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lvwColaAtencion.Parent" xml:space="preserve">
+    <value>cardColaAtencion</value>
+  </data>
+  <data name="&gt;&gt;lvwColaAtencion.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblColaAtencion.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 20px, style=Bold</value>
+  </data>
+  <data name="lblColaAtencion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 14</value>
+  </data>
+  <data name="lblColaAtencion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>390, 19</value>
+  </data>
+  <data name="lblColaAtencion.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblColaAtencion.Text" xml:space="preserve">
+    <value>Pacientes en Cola</value>
+  </data>
+  <data name="&gt;&gt;lblColaAtencion.Name" xml:space="preserve">
+    <value>lblColaAtencion</value>
+  </data>
+  <data name="&gt;&gt;lblColaAtencion.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblColaAtencion.Parent" xml:space="preserve">
+    <value>cardColaAtencion</value>
+  </data>
+  <data name="&gt;&gt;lblColaAtencion.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cardColaAtencion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 278</value>
+  </data>
+  <data name="cardColaAtencion.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardColaAtencion.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardColaAtencion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 408</value>
+  </data>
+  <data name="cardColaAtencion.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cardColaAtencion.Name" xml:space="preserve">
+    <value>cardColaAtencion</value>
+  </data>
+  <data name="&gt;&gt;cardColaAtencion.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cardColaAtencion.Parent" xml:space="preserve">
+    <value>tabDashboard</value>
+  </data>
+  <data name="&gt;&gt;cardColaAtencion.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>390</value>
+  </data>
+  <data name="lvwPacientesRegistrados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 67</value>
+  </data>
+  <data name="lvwPacientesRegistrados.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="lvwPacientesRegistrados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>390, 154</value>
+  </data>
+  <data name="lvwPacientesRegistrados.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lvwPacientesRegistrados.Name" xml:space="preserve">
+    <value>lvwPacientesRegistrados</value>
+  </data>
+  <data name="&gt;&gt;lvwPacientesRegistrados.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialListView, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lvwPacientesRegistrados.Parent" xml:space="preserve">
+    <value>cardPacientesRegistrados</value>
+  </data>
+  <data name="&gt;&gt;lvwPacientesRegistrados.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblPacientesRegistrados.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Roboto Medium, 20px, style=Bold</value>
+  </data>
+  <data name="lblPacientesRegistrados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 14</value>
+  </data>
+  <data name="lblPacientesRegistrados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>390, 24</value>
+  </data>
+  <data name="lblPacientesRegistrados.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblPacientesRegistrados.Text" xml:space="preserve">
+    <value>Pacientes Registrados</value>
+  </data>
+  <data name="&gt;&gt;lblPacientesRegistrados.Name" xml:space="preserve">
+    <value>lblPacientesRegistrados</value>
+  </data>
+  <data name="&gt;&gt;lblPacientesRegistrados.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialLabel, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblPacientesRegistrados.Parent" xml:space="preserve">
+    <value>cardPacientesRegistrados</value>
+  </data>
+  <data name="&gt;&gt;lblPacientesRegistrados.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cardPacientesRegistrados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>184, 23</value>
+  </data>
+  <data name="cardPacientesRegistrados.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardPacientesRegistrados.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>14, 14, 14, 14</value>
+  </data>
+  <data name="cardPacientesRegistrados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>424, 238</value>
+  </data>
+  <data name="cardPacientesRegistrados.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cardPacientesRegistrados.Name" xml:space="preserve">
+    <value>cardPacientesRegistrados</value>
+  </data>
+  <data name="&gt;&gt;cardPacientesRegistrados.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialCard, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cardPacientesRegistrados.Parent" xml:space="preserve">
+    <value>tabDashboard</value>
+  </data>
+  <data name="&gt;&gt;cardPacientesRegistrados.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabDashboard.ImageKey" xml:space="preserve">
+    <value>dashboard_2.png</value>
+  </data>
+  <data name="tabDashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="tabDashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 725</value>
+  </data>
+  <data name="tabDashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabDashboard.Text" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="tabDashboard.ToolTipText" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="&gt;&gt;tabDashboard.Name" xml:space="preserve">
+    <value>tabDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabDashboard.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabDashboard.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabDashboard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabRegistrarPaciente.ImageKey" xml:space="preserve">
+    <value>registrarpaciente.png</value>
+  </data>
+  <data name="tabRegistrarPaciente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="tabRegistrarPaciente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 725</value>
+  </data>
+  <data name="tabRegistrarPaciente.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabRegistrarPaciente.Text" xml:space="preserve">
+    <value>Registrar Paciente</value>
+  </data>
+  <data name="tabRegistrarPaciente.ToolTipText" xml:space="preserve">
+    <value>Registrar Paciente</value>
+  </data>
+  <data name="&gt;&gt;tabRegistrarPaciente.Name" xml:space="preserve">
+    <value>tabRegistrarPaciente</value>
+  </data>
+  <data name="&gt;&gt;tabRegistrarPaciente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabRegistrarPaciente.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabRegistrarPaciente.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabAtenderPaciente.ImageKey" xml:space="preserve">
+    <value>atenderpaciente.png</value>
+  </data>
+  <data name="tabAtenderPaciente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="tabAtenderPaciente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 725</value>
+  </data>
+  <data name="tabAtenderPaciente.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tabAtenderPaciente.Text" xml:space="preserve">
+    <value>Atender Paciente</value>
+  </data>
+  <data name="tabAtenderPaciente.ToolTipText" xml:space="preserve">
+    <value>Atender Paciente</value>
+  </data>
+  <data name="&gt;&gt;tabAtenderPaciente.Name" xml:space="preserve">
+    <value>tabAtenderPaciente</value>
+  </data>
+  <data name="&gt;&gt;tabAtenderPaciente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabAtenderPaciente.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabAtenderPaciente.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tabHistorialAtencion.ImageKey" xml:space="preserve">
+    <value>historial.png</value>
+  </data>
+  <data name="tabHistorialAtencion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="tabHistorialAtencion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 725</value>
+  </data>
+  <data name="tabHistorialAtencion.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="tabHistorialAtencion.Text" xml:space="preserve">
+    <value>Historial de Pacientes</value>
+  </data>
+  <data name="tabHistorialAtencion.ToolTipText" xml:space="preserve">
+    <value>Historial de Pacientes</value>
+  </data>
+  <data name="&gt;&gt;tabHistorialAtencion.Name" xml:space="preserve">
+    <value>tabHistorialAtencion</value>
+  </data>
+  <data name="&gt;&gt;tabHistorialAtencion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabHistorialAtencion.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabHistorialAtencion.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tabDeshacerAccion.ImageKey" xml:space="preserve">
+    <value>deshacer.png</value>
+  </data>
+  <data name="tabDeshacerAccion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="tabDeshacerAccion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 725</value>
+  </data>
+  <data name="tabDeshacerAccion.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tabDeshacerAccion.Text" xml:space="preserve">
+    <value>Deshacer Acción</value>
+  </data>
+  <data name="tabDeshacerAccion.ToolTipText" xml:space="preserve">
+    <value>Deshacer Acción</value>
+  </data>
+  <data name="&gt;&gt;tabDeshacerAccion.Name" xml:space="preserve">
+    <value>tabDeshacerAccion</value>
+  </data>
+  <data name="&gt;&gt;tabDeshacerAccion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabDeshacerAccion.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabDeshacerAccion.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabSalir.ImageKey" xml:space="preserve">
+    <value>salir.png</value>
+  </data>
+  <data name="tabSalir.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 44</value>
+  </data>
+  <data name="tabSalir.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1166, 725</value>
+  </data>
+  <data name="tabSalir.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tabSalir.Text" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="tabSalir.ToolTipText" xml:space="preserve">
+    <value>Salir</value>
+  </data>
+  <data name="&gt;&gt;tabSalir.Name" xml:space="preserve">
+    <value>tabSalir</value>
+  </data>
+  <data name="&gt;&gt;tabSalir.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabSalir.Parent" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabSalir.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tabControlDashboard.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControlDashboard.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9.75pt, style=Bold</value>
+  </data>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEZTeXN0ZW0uV2luZG93cy5Gb3JtcywgQ3VsdHVyZT1uZXV0cmFs
+        LCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5BQEAAAAmU3lzdGVtLldpbmRvd3MuRm9ybXMu
+        SW1hZ2VMaXN0U3RyZWFtZXIBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA5CgAAAJNU0Z0AUkBTAIBAQsB
+        AAF8AQEBfAEBASABAAEgAQAE/wEhAQAI/wFCAU0BNgcAATYDAAEoAwABgAMAAWADAAEBAQABIAYAAcD/
+        AP8A/wD/ADoAAzcBWgNHAYAwAAMEAQUDRwGAA0cBgANHAYADRwGAA0cBgAMqAUD/AKkAA0YBfQT/A0cB
+        gDAAA0cBgBT/A0cBgP8AqQADRwGABP8DRwGAMAADWAG4BP8DUgGgA0cBgANHAYADRwGAAyoBQP8AqQAD
+        RwGABP8DRwGAMAADWwHABP8DKgFAHAADRwGAVP8wADj/AyoBQAQAA1sBwCT/A0cBgKgAA0cBgAT/A0cB
+        gCgAAwwBDwM9AWcDYwHfBP8DTQGTAxMBGhgAA0cBgFT/MAA4/wMqAUAEAANbAcAk/wNHAYCoAANHAYAE
+        /wNHAYAkAAMhATAY/wNNAZMUAANHAYAE/wNHAYBEAAj/MAAI/ygAA1sBwAT/AyoBQAQAA1sBwAT/AyoB
+        QBQAA0cBgAT/A0cBgKgAA0cBgAT/A0cBgCAAA08BmQT/A24B9QNHAYADRwGAA0cBgANHAYADagHmBP8D
+        YQHRAx4BKwwAA0cBgAT/A0cBgEQACP8wAAj/KAADWwHABP8DKgFABAADWwHABP8DKgFAFAADRwGABP8D
+        RwGAnAADXwHYHP8DYQHWEAADIwEzCP8DEwEaFAADTgGVBP8DTgGVDAADQAFvBP8DYgHhQAADXwHLBP8D
+        YQHeMAAI/ygAA1sBwAT/AyoBQAQAA1sBwAT/AyoBQBQAA0cBgAT/A0cBgJgAA2EB2ST/A2EB2QgAAw8B
+        EwT/A2sB8gMTARkYAAMJAQwDaQHoBP8DGQEiCAADBQEGA2UB4gT/A2MB9gNLAYoDLAFDKAADGQEiA0cB
+        gANdAcUE/wNlAeIDCQEMMAAI/ygAA1sBwAT/AyoBQAQAA1sBwAT/AyoBQBQAA0cBgAT/A0cBgJgACP8c
+        AAj/CAADPgFqBP8DRwGAIAAEAQT/A2EBzxAAA1sBwBD/A00BkgMXAR8UAAM9AWgU/wMaASQ0AAj/KAAD
+        WwHABP8DKgFABAADWwHABP8DKgFAFAADRwGABP8DRwGAmAAI/xwACP8IAANHAYAE/wNHAYAQAANEAXcD
+        SwGNA1oBvQNbAcADWwHACP8UAAMlATYDRwGCA2MB1Sj/A2UB5wNIAYMDNgFXPAAI/wMqAUADKgFAAyoB
+        QAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMqAUADYQHPBP8DKgFABAADWwHABP8DQQFwAyoBQAMqAUAD
+        KgFAAyoBQAMqAUADUgGgBP8DRwGAmAAI/xwACP8IAANHAYAE/wNHAYAMAANIAYMc/yQAAy4BRgNfAcgQ
+        /wNrAfIDQAFuIAADRwGABP8DRwGAIAA4/wMqAUAEAANbAcAk/wNHAYCYAAj/DAADZQHnFP8IAANHAYAE
+        /wNSAaADKgFAAzcBWgNHAYII/wNEAXcDKwFCAyoBQAMqAUAI/2QAA0cBgAT/A0cBgCAAA1sBwANbAcAD
+        WwHAA1sBwANbAcADWwHAA1sBwANbAcADWwHAA1sBwANbAcADWwHAA1sBwANbAcADIQEwBAADTAGQA1sB
+        wANbAcADWwHAA1sBwANbAcADWwHAA1sBwANbAcADWwHAAzoBYJgACP8MAANfAdAU/wgAA0cBgBj/AwMB
+        BBAACP9kAANHAYAE/wNHAYD/ACUACP8cAAj/CAADRwGABP8DYwHfA1sBwANWAa4DRwGAAycBOhQACP8o
+        AAM8AWQDXwHTCP8DaQHoA0cBgQMcAScgAANHAYAE/wNHAYAgAAMqAUADKgFAAyoBQAMqAUADKgFAAyoB
+        QAMqAUADKgFAAyoBQAMqAUADDAEQBAADIQEwAyoBQAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMqAUAD
+        KgFAAyoBQAMqAUADKgFAAyoBQAMYASCYAAj/HAAI/wgAA0cBgAT/A0cBgCQACP8kAANiAdcY/wNlAecQ
+        AANHAYADRwGAA0cBgANHAYADWgG/BP8DWgG/A0cBgANHAYADRwGAA0cBgBAAKP8DKgFABAADWwHANP8D
+        RwGAmAAI/wwAA2UB5xT/CAADRwGABP8DRwGAJAAI/yAAAzYBWQT/A2cB7wNCAXQDBgEHBAADKgE/A2IB
+        3AT/A1cBsgwALP8QAAj/A1sBwANbAcADWwHAA1sBwANbAcADWwHAA2cB7wT/AyoBQAQAA1sBwAT/A2EB
+        zwNbAcADWwHAA1sBwANbAcADWwHAA1sBwANbAcADWwHAA1sBwANjAd8E/wNHAYCYAAj/DAADXwHQFP8I
+        AANHAYAE/wNHAYAkAAj/IAADSAGDBP8DRwGAFAAI/wMDAQQIAANHAYADRwGAA0cBgANHAYADWgG/BP8D
+        WgG/A0cBgANHAYADRwGAA0cBgBAACP8YAANbAcAE/wMqAUAEAANbAcAE/wMqAUAkAANHAYAE/wNHAYCY
+        AAj/HAAI/wgAA0cBgAT/A1oBvwNHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgAj/IAAD
+        WAGzBP8DMgFPFAADYQHPBP8DJAE0GAADRwGABP8DRwGAIAAI/xgAA1sBwAT/AyoBQAQAA1sBwAT/AyoB
+        QCQAA0cBgAT/A0cBgJgACP8cAAj/CAADOAFcMP8DWAGzIAADVQGsBP8DNgFZFAADYQHZBP8DIAEtGAAD
+        RwGABP8DRwGAIAAI/xgAA1sBwAT/AyoBQAQAA1sBwAT/AyoBQCQAA0cBgAT/A0cBgJQAAz0BZwj/A0cB
+        gANHAYADRwGAA0cBgANHAYADRwGAA0cBgAj/Az4BaQgAAzUBVgNHAYADRwGAA0cBgANHAYADRwGAA0cB
+        gANHAYADRwGAA0cBgANHAYADPgFpJAADSAGDBP8DUwGnEAADMAFKCP8DAwEEGAADRwGABP8DRwGAIAAI
+        /xgAA1sBwAT/AyoBQAQAA1sBwAT/AyoBQCQAA0cBgAT/A0cBgJQANP9cAAMpAT0I/wNdAccIAAM8AWYI
+        /wNEAXkcAANHAYAE/wNHAYAgAAj/GAADWwHABP8DKgFABAADWwHABP8DKgFAJAADRwGABP8DRwGAlAAD
+        PQFoA0cBgANHAYADRwGAA0cBgANbAcAE/wNbAcADRwGAA0cBgANHAYADRwGAAz4BaWAAA0IBcwNrAfIU
+        /wNVAaxMAAj/A0cBgANHAYADRwGAA0cBgANHAYADRwGAA2MB3wT/AyoBQAQAA1sBwAT/A1IBoANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANaAb8E/wNHAYCoAANHAYAE/wNHAYB4AAMIAQoD
+        YAHOCP8DZgHlAw8BE1AAKP8DKgFABAADWwHANP8DRwGAqAADRwGABP8DRwGA4AADRwGAA0cBgANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAAxgBIAQAAzoBYANHAYADRwGAA0cBgANHAYADRwGAA0cB
+        gANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADKgFApAAU//8A6QADJwE6FP8DJwE6/wD/AP8A/wD/
+        AP8A/wD/AP8A/wCSAANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cB
+        gANHAYADRwGAA0cBgANHAYDQAAMHAQkDXwHTCP8DMAFK3ABA/xAAAxgBIANHAYADRwGAA0cBgANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgAMrAUFUAAM4AVwDbAHrEP8DUQGeAxMBGtQACP8DRwGAA0cBgANHAYAD
+        RwGAA0gBgwT/A1oBwgNHAYADRwGAA0cBgANHAYADRwGACP8QAANdAcdk/wMuAUhMAAMHAQkI/wNdAccE
+        AAMLAQ4DiwH7BP8DVgGwqAADNgFZA2UB7Bz/CAAI/xAAA1cBtQj/A0ABbhAACP8QAAj/A0cBgANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgANaAb8E/wNHAYAYAAMuAUgDZgHgJP8DRwGCBAADQwF1BP8DWgG3DAAD
+        KQE9A28B9wT/A1UBrQMQARVEAANHAYA8/wNHAYAYACT/CAAI/wwAA0ABbhD/AykBPgwACP8QAAj/WAAD
+        RwGABP8DRwGAGAAs/wNHAYAEAANHAYAE/wNHAYAUAANuAfUE/wNTAadEAANHAYA8/wNHAYAYAAj/JAAD
+        XQHMBP8DWwHAA0QBeAMxAUwE/wOAAfwDMwFRA1MBpQT/A10BxwMJAQsDRgF9A4sB+wT/A0wBkBAACP9Y
+        AANHAYAE/wNHAYAYAAj/LAADPAFlBP8DXAHBDAADFAEbA1cBtQT/A30B+gT/A1MBpQMNARE8AANHAYAE
+        /wNHAYAsAANHAYAE/wNHAYAYAAj/JAADIAEuFP8DRwGACAAU/wNSAaQUAAj/WAADRwGABP8DRwGAGAAI
+        /zAACP8DawHyCAADVwG1BP8DYwHaBAADYwH2BP8DUAGaPAADLgFHCP8DVQGtA0IBcgMOARIUAAMNARED
+        QgFyA1gBuAj/AygBPBgACP8sAANCAXMDWgHCBP8DWQG5AwUBBggAAwoBDQNlAd0E/wNSAaADOgFhGAAI
+        /xAAAyoBQAT/A1sBwBQAAxgBIAMqAUADKgFAAyoBQAMqAUADKgFAEAADRwGABP8DRwGAGAAI/zAAAxYB
+        HgNhAdkE/wNZAbYDVwG1BP8DYwHaAyABLQQAAycBOQNvAfcE/wM6AWA8AAMPARMDiwH7EP8DZQHdA1cB
+        tANlAd0Q/wN8AfgDDwETHAAI/wwAA0cBgBT/AzkBXUwACP8QAAMqAUAE/wNbAcAUAANHAYAU/xAAA0cB
+        gAT/A0cBgBgACP8MAANHAYAc/wMYASEEAAMhATAM/wNjAdoQAAMFAQYI/0AAAw8BEwNHAYADWAG4HP8D
+        VgGrA0YBfQMJAQsgAAj/DAADRwGAGP8DZgHgAyQBNAwAAwQBBQMjATMDFgEeLAAI/wgAAyoBQAMqAUAD
+        QQFwBP8DYQHPAyoBQAMqAUADKgFACAADGAEgAyoBQAMqAUADKgFAAyoBQAMqAUAQAANHAYAE/wNHAYAY
+        AAj/DAADRwGAHP8DYQHRAx0BKAQAAyABLgNjAdUE/wNYAbgUAAj/UAADBAEFAx4BKwMxAU4DHgErAwQB
+        BTAACP84AAMrAUEQ/wMYASEkAAj/CAAg/zAAA0cBgAT/A0cBgBgACP88AAMdASgI/wNmAeUMAANBAXAE
+        /wOpAf6UAAj/NAADOAFbCP8DYAHOA2oB5gT/A18B2AQCIAAI/wgAA1sBwANbAcADYQHPBP8DZwHvA1sB
+        wANbAcADWwHACAADGAEgAyoBQAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMYASAEAANHAYAE/wNHAYAY
+        AAj/QAADGwElA18B0AT/A1oBvQNHAYADUQGdBP8DYwH2AxwBJxQAA0cBgANHAYADRwGAA0cBgANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgAMMARAQAAMRARYDZQHjBP8DZQHiAxEBFjAACP80AANpAegE/wNBAXEI
+        AANjAeQE/wNfAdAgAAj/EAADKgFABP8DWwHAFAADRwGAHP8DRwGABAADRwGABP8DRwGAGAAI/0QAAxQB
+        GxT/A0MBdRgAKP8DGAEgDAADQwF1A28B9wz/A30B+gNAAW4sAAj/DAADGAEgAyoBQAMqAUADKgFAAyoB
+        QAMqAUADKgFAAyoBQAgACP8QAAj/IAAI/xAAAyoBQAT/A1sBwBQAAxgBIAMqAUADKgFAAyoBQAMqAUAD
+        KgFAAyoBQAMqAUADGAEgBAADRwGABP8DRwGAGAAI/wwAAxgBIAMqAUADKgFAAyoBQAMqAUADKgFAAyoB
+        QAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMVARwEAAMCAQMDQAFvA0cBgANGAX8DHAEnHAADRwGAA0cB
+        gANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAAwwBEAgAAw0BEQj/A00BkgMCAQMDUwGiCP8D
+        DQERKAAI/wwAA0cBgBz/CAAI/xAACP8gAAj/EAADKgFABP8DWwHAPAADRwGABP8DRwGAGAAI/wwAA0cB
+        gDT/aAADRAF3BP8DUwGlDAADUgGhBP8DRAF3KAAI/wwAAzoBYANbAcADWwHAA1sBwANbAcADWwHAA1sB
+        wANbAcADCwEOBAADWgG3BP8DWQG5AzEBTgM9AWcDbwHzBP8DPwFtIAAI/1gAA0cBgAT/A0cBgBgACP8M
+        AAM6AWADWwHAA1sBwANbAcADWwHAA1sBwANbAcADWwHAA1sBwANbAcADWwHAA1sBwANbAcADWwHADAAD
+        RwGAA0cBgFQAA0cBgAT/A0cBgAwAA0cBgAT/A0cBgCgACP80AAMkATUU/wNXAbQkAAj/JAADIAEtA0YB
+        fQNHAYADNAFUJAADRwGABP8DRwGAGAAI/1AACP9UAAMuAUYE/wNhAd4DJAE0BAADJwE5A2QB2wT/Ay4B
+        RygACP84AAMaASMDSQGFA1gBswNRAZ8DRwGAAw0BEQQAA0ABbhwACP8gAANJAYUQ/wNoAfQDCQELHAAD
+        RwGABP8DRwGAGAAI/1AACP8gACz/A24B9QgAA24B9RT/A2cB7ywACP9QAAMuAUcE/xwACP8gAANaAb0E
+        /wNSAaADRwGAA2MB3wT/AykBPhwAA0cBgAT/A0cBgBgACP9QAAj/IAAw/wNGAX4IAANMAY4DgAH8BP8D
+        gAH8A0wBjzAACP8MAAMqAUADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cB
+        gANBAXEDMAFLDAAI/xwACP8DRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANjAd8E/wMqAUAE
+        AANbAcAE/wNSAaADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA1oBvwT/A0cBgBgACP8MAAMqAUAD
+        RwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGADAAI/6AACP8M
+        AANHAYA0/wwACP8cAANbAcAs/wMqAUAEAANbAcAs/wMrAUEYAAj/DAADRwGANP8MAAj/oAAI/wwAAyoB
+        QANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYAMAAj/HAAD
+        GgEkA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA2MB3wT/AyoBQAQAA1sBwAT/A1IB
+        oANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAAy4BSBwACP8MAAMqAUADRwGAA0cBgANHAYAD
+        RwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGADAAI/6AACP9QAAj/RAADWwHABP8D
+        KgFABAADWwHABP8DKgFAQAAI/1AACP8gAANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cB
+        gANHAYADRwGAA0cBgANHAYADRwGAA0cBgANBAXBAAAj/UAAI/0QAA1sBwAT/AyoBQAQAA1sBwAT/AyoB
+        QEAACP9QAAj/IAA8/wNjAd9AAAj/UAAI/0QAA1sBwAT/AyoBQAQAA1sBwAT/AyoBQEAACP9QAAj/IAAD
+        RwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYAD
+        QQFwQAADYwHaWP8DZQHsRAADWwHABP8DKgFABAADWwHABP8DKgFAQAADWwHAKP8DWQG2A0cBgANjAfYk
+        /wNmAeCkAANfAdNU/wMzAVJEAANTAaUU/wMbASVEAANdAcck/wMFAQYEAANJAYUk/wMuAUj/AEUAAysB
+        QgOAAfwI/wO+Af0DSAGEaAADVwGxBP8DUQGdA0MBdQNiAeEE/wMjATL/AOUAAyoBQBD/A0cBgP8A7QAD
+        DAEQA0UBfANHAYADLQFE/wD/AP8A/wD/AP8A/wD7AAMXAR8DRAF6A0cBgANHAYADRAF5AyMBMv8A4QAD
+        CwEOA28B9xj/A28B8wMGAQdQAAM1AVUDRwGAA14B0hD/A2IB1wNNAZIDQAFvAwQBBbgAAy4BSANmAeAo
+        /3AAAz8BbQNlAewE/wNjAfYDUwGiA0cBgANHAYADTgGUA2gB9Aj/A04BmEQAAxIBGCz/A2MB9gMHAQm0
+        ADD/bAADQQFwCP8DXwHJGAADRAF6CP8DXwHLPAADRgF/A28B9wT/A18B0ANHAYADKwFCDAAEAQMjATID
+        QgF0A1oBwgj/A1ABmkQAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYAD
+        RwGAAyABLjgACP+QAAQCA2UB4gT/A0QBeCAAAzoBYQNoAfAE/wM5AV80AANHAYAI/wNSAaAoAANBAXEM
+        /0AANP8DgAH8Aw8BFDAACP+QAANsAesE/wNlAd0oAANDAXYE/wNnAe8wAAM+AWoDqQH+BP8DMwFQMAAD
+        KAE7A10BzAT/A1ABmzwAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYADRwGAA0cBgANHAYAD
+        RwGCA2YB4AT/A2cB7wNGAX0sAAj/jAADFwEfBP8DawHyLAADAwEEA28B8wT/AyMBMigAAwwBEAj/Ay4B
+        RjgAAywBQwj/AwwBD2wAA1UBrQj/A0ABbigACP+MAANCAXQE/wNSAaQwAAM2AVkE/wNlAecoAANNAZEE
+        /wNVAawsAAMPARQDRAF6DAADPwFtBP8DfQH5AwUBBmwAAz8BbAT/A2MB1SgACP88AAMqAUADXQHKAxsB
+        JUQAA0cBgAT/A0cBgDQACP8oAAOpAf4E/wMhAS8sAANVAawE/wNEAXoMAANaAb0E/wNCAXRwAAj/AywB
+        QyQACP88AANnAe8E/wNdAcpEAANHAYAE/wNHAYA0AAj/JAADIQEwBP8DZQHnKAADEwEaA1YBsAT/A28B
+        9wMpAT0MAANEAXgE/wNOAZRwAAMlATYE/wNuAfUkAAj/PAADJgE4A2cB7wT/A10BygMbASU0AAMEAQUD
+        MgFPA1wBvgT/A1wBvgMzAVEDBAEFLAAI/yQAA2MB1QT/AzgBXCgAA1oBtwT/A2MB9hQAAyUBNwT/A18B
+        2HQACP8kAAj/RAADZwHvBP8DXQHKMAADFgEeHP8DHQEoKAAI/yQACP8kAAMXAR8DWgG6BP8DbwHzAycB
+        OhQABAII/zwAA04BlAMfASwwAAj/JAAI/xgAAyoBQAMqAUADKgFAAyoBQAMqAUADKgFAAyoBQAMqAUAD
+        KgFAAyoBQAMqAUADRAF4CP8DXQHKAxsBJSQAA1QBqAj/A14BzQNHAYEDRwGAA0cBgANcAcYI/wNUAakc
+        AAMuAUgDYgHhCP8DVQGtAwwBEBwACP8kAANTAacE/wNwAfEgAAj/OAADZwHqCP8DCQELKAADMwFRBP8D
+        fQH6JAAI/xgAPP8DXQHKIAADVAGoCP8DNAFTFAADNgFYCP8DVAGoGAAY/0gAA1UBrwT/AzoBYCAACP80
+        AANXAbUE/wNeAdIDGwElKAADDAEPA28B9wT/AyEBMCQACP8YAANbAcADWwHAA1sBwANbAcADWwHAA1sB
+        wANbAcADWwHAA1sBwANbAcADWwHAA1sBwAz/A0MBdRwAAzABSgT/A2wB6wMsAUMcAAMsAUMDYwHpBP8D
+        MAFLEAADYwHaBP8DSwGKAwIBAwMJAQsDWgHCBP8DQAFuRAADVQGvBP8DMwFQIAAI/zAAA2cB6gj/AxsB
+        JSwAA0gBgwT/A1wBxCgACP9EAANEAXkI/wM+AWogAANJAYgE/wNHAYAkAANHAYAE/wNOAZUQAAj/DAAD
+        RwGABP8DRwGARAADVQGvBP8DMwFQHAADKgE/BP8DXQHKLAADVwG1BP8DXgHSAxsBJSgAAy4BRwNUAagI
+        /wMqAT8oAAj/QAADRAF3A4sB+wT/A0MBdSQAA2UB5wT/AxwBJyQAAx0BKAT/A2wB6xAAA18B2AT/A0kB
+        hwMDAQQDBgEIA1wBwwT/Az8BbUQAA1UBrwT/AzMBUBwAA0cBgAT/A0cBgCgAA2cB6kD/A30B+jAACP88
+        AANDAXYI/wM+AWooAAj/LAAI/xAABAIY/wQBHAADYwHfA2MB3wNjAd8DYwHfA2MB3wNjAd8DWgG3DAAD
+        VQGvBP8DMwFQHAADXgHSBP8DMQFNJAADKgFAPP8DXwHYA0cBgAMYASAwAAj/PAADWgG6BP8DQwF1LAAI
+        /ywACP8UAAMuAUgDZAHbCP8DVQGsAwwBECAAGP8DYQHPDAADVQGvBP8DMwFQGAADVQGtCP8sAAMQARUI
+        /wNHAYBoAAj/QAADPgFqMAAI/ywACP9MAAz/A18ByQMlATcDGAEgAxUBHAwAAzYBWANHAYADHQEoFAAD
+        MwFSBP8DYwHpAwwBEDAAAzABSgj/A0cBgGQACP90AAj/LAAI/0wACP8DbgH1BP8DXwHQMAADNQFWCP8D
+        QgFzOAADEAEVCP8DRwGAYAAI/3QACP8sAAj/TAAI/wMpAT0DYwH2BP8DawHyAz4BaSAAAykBPQNXAbEE
+        /wN9AfoDRwGAQAADMAFKCP8DRwGAXAAI/3QACP8IAANHAYADRwGADAADRwGAA0cBgAgACP9MAAj/CAAD
+        XQHKDP8DUgGhDAADAgEDAzwBZgNsAesM/wMvAUlIAAMQARUE/wNlAeJcAAj/dAAI/wgACP8MAAj/CAAI
+        /0wACP8IAAMDAQQDRAF7A18BySD/A3wB+ANJAYcDCAEKUAADKgE/YAADWwHALP9MABj/DAAY/2wAA0wB
+        kBD/A1oBugMbASbEAANdAcco/0wAGP8MABj//wDVAAj/DAAI//8A/wD/AP8A/wD/AE4AAUIBTQE+BwAB
+        PgMAASgDAAGAAwABYAMAAQEBAAEBBgABBhYAA/8BAAz/BAAM/wQAAf8BnwH+AQMI/wQAAf8BHwH+AQMI
+        /wQAAf8BHwH+AQMI/wQAAf8BHwH+AT8BgAEAAQEB/wHgAQABIAEDBAAB/wEfAfgBHwGAAQABAQH/AeAB
+        AAEgAQMEAAH/AR8B8AEPAY8B/wH5Af8B5wH+ASMB4wQAAf8BHwHgAQMBjwH/AfkB/wHnAf4BIwHjBAAB
+        +AEDAcMB4wGPAf8B8QH/AecB/gEjAeMEAAHwAQEBhwHhAYEB/wGBAf8B5wH+ASMB4wQAAfMB+QGPAfEB
+        4AE+AQMB/wHnAf4BIwHjBAAB8wH5AY8BAQHwAQABDwH/AeABAAEgAQMEAAHzAfkBjgEBAf8BAAH/AR8B
+        4AEAASABAwQAAfMBgQGAAQED/wEfAeABAAEgAQMEAAHzAYEBgAF5A/8BHwT/BAAB8wH5AYAB+QH/AYAB
+        /wEfAeABAgEAAQMEAAHzAfkBjwH5Af8BAAHwAQEB4AECAQABAwQAAfMBgQGPAfkB/gEIAXABAQHgAQIB
+        AAEDBAAB8wGBAY8B+QH+AT4BMAEBAecB4gE/AeMEAAHzAfkBgAEBAf4BPgE/AR8B5wHiAT8B4wQAAfMB
+        +QGAAQEB/gE+AT8BHwHnAeIBPwHjBAAB4AEAAcABAwH+ATwBPwEfAecB4gE/AeMEAAHgAQAC/wH+ARgB
+        fwEfAecB4gE/AeMEAAHgAQAD/wEAAv8B4AECAQABAwQAAf8BHwP/AYEC/wHgAQIBAAEDBAAB/wEfBv8B
+        4AECAQABAwQAAf4BDwr/BAAB/AEHCv8EAAz/BAAM/wQADP8EABX/Af4BAAEBBv8B4Ab/Af4BAAEBAeAC
+        AAEHAv8BwAE/Bf8B/gEAAQEB4AIAAQMC/wGEAT8E/wHwAQYBeAF5AeACAAEDAfABAAGOAQ8B/wH4AQAB
+        AwHwAQYBcAE5AecC/wHjAfABAAKPAf8B+AEAAQMB8wH+AQABAQHnAv8B4wHzAf8BjgEDAf8B+AH/AeMB
+        8wH+AgMB5wL/AeMB8wH/AcYBIwH/AfgBHwEDAfMB/wGDAQcB5wGPAYEB4wHzAf8BwAEhAf8B/AEAAQcB
+        8wGAAv8B5wGPAYEB4wHzAYABIAHxAf8B/gEAAQ8B8wGAATgB/wHmAQEBgQHjAfMBgAEQAfkC/wHgAf8B
+        8wH/AfABPwHmAQEB/wHjAfMB/wH4AXEE/wHzAf8B4AEfAeYBAQGAASMB8wH/AfwBAQHwAQEB4AH/AfMB
+        /wHjAR8B5wGPAYABIwHzAf8B/gEDAfABAQHAAX8B8wGAAWcBnwHnAY8BgAEjAfMBgAEBAQcB8AEBAYAB
+        PwHzAYABZwGfAecBjwH/AeMB8wGAAQED/wGOAT8B8wGAASABHwHnAv8B4wHzAYABAQHPAv8BjgE/AfMB
+        /wHgAT8B5wH8AT8B4wHzAv8BzwL/AYQBPwHzAf8B8AEvAecB+AEPAeMB8wL/Ac8B8AEAAcABfwHzAv8B
+        zwHnAfgBDwHjAfMC/wHPAfABAAFgAf8B8wGAAQEBzwHgAQABgAEDAfMBgAEBAc8E/wHzAYABAQHPAeAB
+        AAGAAQMB8wGAAQEBzwT/AfMBgAEBAc8B4AEAAYABBwHzAYABAQHPBP8B8wL/Ac8B/wH4AY8B/wHzAv8B
+        zwHwAQABDwH/AfMC/wHPAf8B+AGPAf8B8wL/Ac8B8AEAAQ8B/wHzAv8BzwH/AfgBjwH/AfMC/wHPAfAB
+        AAEPAf8B8AIAAQ8B/wH4AY8B/wHwAgABDwT/AfgCAAEPAf8B+AEPAf8B+AEAAYABDwn/AfgBHwL/AfgB
+        Dw7/AfgBHw7/AfwBPz7/Af4BBw7/AfgBAQL/AeABAwX/AfABAAP/AfABAAL/AYABAQX/AfABAAP/AeEB
+        +AF/Af8BAwGAAv8BgAEDAf8B8wT/AcMB/AE/Af4BHwH4AX8B/wGAAQAB/wHzBP8BxwH+AT8B/AE/AfwB
+        PwH/AYABAAF/AfME/wGPAf4BHwH4AX8B/gEfAv8B/AE/AfME/wGPAf8BHwH4Af8B5wEPAv8B/gE/AfMB
+        /wH4Av8BjwH/AZ8B+AH/AeMBjwP/AR8B8wH/AfgC/wGPAf8BnwHxAf8BgwGPA/8BHwHzAf8B+AE/Af4B
+        AwH/AZ8B8QH/Ao8D/wGfAfMB/wH+AT8B/AEBAf8BnwHzAf4BDwGPAf8B5wH/AZ8B8wHwAQABDwH4AQAB
+        /gEHAfMB/gE/Ac8B/wHDAf8BHwHzAfABAAEPAfAB+AF+AQcB/wH+AT8BzwH/AYcB/gEfAfMB8AEAAQ8B
+        4QH8ATwBAwH/Af4BPwHPAf8BDwH+AT8B8wH/Af4BHwHjAf4BPAHjAf8B/gE/AY8B/gEfAfgBPwHzAf8B
+        /AE/AeMB/gE8AQMB/wH+AT8BjwH8AgAB/wHzAf8B+AF/AecB/wE8AQMB+AEOAT8BjwH4AgAB/wHzAf8B
+        +AH/AecB/wE+AQcB+AEOAT8BHwH8AT8C/wHzAf8B/QH/AecB/wE/Af8B+AEOAT4BHwH+AR8C/wHzA/8B
+        5wH/AT8B/wH4AT8B/AE/Af8BDwL/AfMD/wHnAf8BPwH/AfgBDwHwAX8B/wGHAv8B8wP/AeYBcwE/Af8B
+        +QGDAYAC/wHHAv8B8wP/AeYBcwE/Af8B+QGAAQEC/wHvAv8B8AEAAv8B4AFwAT8C/wH4AQ8F/wH4AQAC
+        /wHgAXABPw3/Af4BczL/Cw==
+</value>
+  </data>
+  <data name="tabControlDashboard.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>On</value>
+  </data>
+  <data name="tabControlDashboard.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="tabControlDashboard.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 64</value>
+  </data>
+  <data name="tabControlDashboard.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1174, 773</value>
+  </data>
+  <data name="tabControlDashboard.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.Name" xml:space="preserve">
+    <value>tabControlDashboard</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialTabControl, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControlDashboard.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>47</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1180, 840</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Centro Médico Material</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Name" xml:space="preserve">
+    <value>columnHeader4</value>
+  </data>
+  <data name="&gt;&gt;columnHeader4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Name" xml:space="preserve">
+    <value>columnHeader2</value>
+  </data>
+  <data name="&gt;&gt;columnHeader2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Name" xml:space="preserve">
+    <value>columnHeader3</value>
+  </data>
+  <data name="&gt;&gt;columnHeader3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Name" xml:space="preserve">
+    <value>columnHeader1</value>
+  </data>
+  <data name="&gt;&gt;columnHeader1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmDashboardMaterialSkin2</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>MaterialSkin.Controls.MaterialForm, MaterialSkin, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

@@ -1,4 +1,7 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Dominio;
+using CentroMedico.Infraestructura.Estructuras.Nodos;
+
+namespace CentroMedico.Infraestructura.Estructuras
 {
     public class ListaCircularMedicos
     {
@@ -72,6 +75,26 @@
 
             return lista;
         }
+
+        public int Contar()
+        {
+            if (_actual == null)
+                return 0;
+
+            int contador = 1;
+            NodoMedico inicio = _actual;
+            NodoMedico temp = _actual.Siguiente;
+
+            while (temp != null && temp != inicio)
+            {
+                contador++;
+                temp = temp.Siguiente;
+            }
+
+            return contador;
+        }
+
+
     }
 
 }

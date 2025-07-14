@@ -1,4 +1,6 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Dominio;
+
+namespace CentroMedico.Infraestructura.Estructuras.Nodos
 {
     public class NodoAccion
     {

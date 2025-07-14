@@ -1,4 +1,7 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Dominio;
+using CentroMedico.Infraestructura.Estructuras.Nodos;
+
+namespace CentroMedico.Infraestructura.Estructuras
 {
     public class ListaSimplePaciente
     {
@@ -6,7 +9,7 @@
 
         public ListaSimplePaciente()
         {
-            this._raiz = null;
+            _raiz = null;
         }
 
         public NodoPaciente Inicio
@@ -68,8 +71,38 @@
 
         public bool Vacia()
         {
-            return this._raiz == null;
+            return _raiz == null;
         }
+
+        public List<Paciente> ObtenerTodos()
+        {
+            List<Paciente> pacientes = new List<Paciente>();
+            NodoPaciente actual = _raiz;
+
+            while (actual != null)
+            {
+                pacientes.Add(actual.Valor);
+                actual = actual.Siguiente;
+            }
+
+            return pacientes;
+        }
+
+        public int Contar()
+        {
+            int contador = 0;
+            NodoPaciente actual = _raiz;
+
+            while (actual != null)
+            {
+                contador++;
+                actual = actual.Siguiente;
+            }
+
+            return contador;
+        }
+
+
     }
 
 }

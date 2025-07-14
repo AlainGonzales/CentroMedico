@@ -1,4 +1,6 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Dominio;
+
+namespace CentroMedico.Infraestructura.Estructuras.Nodos
 {
     public class NodoHistorial
     {
@@ -8,9 +10,9 @@
 
         public NodoHistorial(AtencionMedica atencion)
         {
-            this.Valor = atencion;
-            this.Siguiente = null;
-            this.Anterior = null;
+            Valor = atencion;
+            Siguiente = null;
+            Anterior = null;
         }
     }
 }

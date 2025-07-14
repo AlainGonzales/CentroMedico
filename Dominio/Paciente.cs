@@ -1,4 +1,4 @@
-﻿namespace CentroMedico
+﻿namespace CentroMedico.Dominio
 {
     public class Paciente
     {

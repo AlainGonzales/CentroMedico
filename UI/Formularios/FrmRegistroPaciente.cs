@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CentroMedico.Dominio;
+using CentroMedico.Infraestructura.Estructuras;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;

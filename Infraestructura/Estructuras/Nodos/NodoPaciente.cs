@@ -1,6 +1,6 @@
-﻿using CentroMedico;
+﻿using CentroMedico.Dominio;
 
-namespace CentroMedico
+namespace CentroMedico.Infraestructura.Estructuras.Nodos
 {
     public class NodoPaciente
     {

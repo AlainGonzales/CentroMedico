@@ -1,4 +1,6 @@
-﻿namespace CentroMedico
+﻿using CentroMedico.Shared;
+
+namespace CentroMedico
 {
     partial class frmDashboard
     {
@@ -142,9 +144,9 @@
             pnlTopInfo.Controls.Add(lblPacientesEnCola);
             pnlTopInfo.Controls.Add(lblDoctorTurno);
             pnlTopInfo.Dock = DockStyle.Top;
-            pnlTopInfo.Location = new Point(200, 0);
+            pnlTopInfo.Location = new Point(253, 88);
             pnlTopInfo.Name = "pnlTopInfo";
-            pnlTopInfo.Size = new Size(684, 80);
+            pnlTopInfo.Size = new Size(1424, 80);
             pnlTopInfo.TabIndex = 1;
             // 
             // lblUltimaAccion

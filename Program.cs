@@ -1,3 +1,5 @@
+using CentroMedico.UI.Formularios;
+
 namespace CentroMedico
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace CentroMedico
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmDashboard());
+            Application.Run(new frmDashboardMaterialSkin2());
         }
     }
 }

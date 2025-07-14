@@ -1,3 +1,6 @@
+using CentroMedico.Dominio;
+using CentroMedico.Infraestructura.Estructuras;
+
 namespace CentroMedico
 {
     public partial class frmDashboard : Form
@@ -85,7 +88,7 @@ namespace CentroMedico
 
         private void btnRegistrarPaciente_Click(object sender, EventArgs e)
         {
-            frmRegistroPaciente form = new frmRegistroPaciente(pacientesRegistrados,colaEspera,pilaAcciones);
+            frmRegistroPaciente form = new frmRegistroPaciente(pacientesRegistrados, colaEspera, pilaAcciones);
             form.ShowDialog();
             RefrescarDashboard();
         }
